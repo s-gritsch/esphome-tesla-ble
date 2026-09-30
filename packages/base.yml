@@ -1,8 +1,8 @@
 substitutions:
-  device_description: Interact with Tesla vehicles over BLE using ESPHome and Home Assistant
-  board: "esp32dev"   # defaults
-  variant: "ESP32"
-  flash_size: "4MB"
+  #device_description: Interact with Tesla vehicles over BLE using ESPHome and Home Assistant
+  #board: "esp32dev"   # defaults
+  #variant: "ESP32"
+  #flash_size: "4MB"
   BLE_library: "https://github.com/s-gritsch/tesla-ble.git"
   tesla_ble_component: "github://s-gritsch/esphome-tesla-ble"
   ble_presence_timeout: 30s
@@ -18,12 +18,12 @@ esphome:
   libraries:
     - TeslaBLE=${BLE_library}
 
-esp32:
+#esp32:
   #board: $board
   #variant: $variant
   #flash_size: $flash_size
-  framework:
-    type: esp-idf
+  #framework:
+    #type: esp-idf
 #  toolchain: platformio
 
 external_components:
